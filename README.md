@@ -45,12 +45,10 @@ C. 선생님
 비기능적 요구사항
 
 1.	트랜잭션
-
-    i.	선생님이 Online상태가 아니면 상담이 불가하다. (Sync 호출)
+  i.	선생님이 Online상태가 아니면 상담이 불가하다. (Sync 호출)
 
 2.	장애격리
-
-    i.	상담 기능이 수행되지 않더라도 신청 기능은 365일 24시간 받을 수 있어야 한다 Async (event-driven), Eventual Consistency
+  i.상담 기능이 수행되지 않더라도 신청 기능은 365일 24시간 받을 수 있어야 한다 Async (event-driven), Eventual Consistency
     ii.	신청시스템이 과중되면 사용자를 잠시동안 받지 않고 신청 진행을 잠시후에 하도록 유도한다 Circuit breaker, fallback
 
 3.	성능
